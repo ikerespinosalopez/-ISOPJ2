@@ -1,35 +1,30 @@
 
 # ⚡ Sprint 1: Instal·lació i Configuració Inicial
 
-## Virtualització i instal·lació del SO Ubuntu
+## Virtualització i instal·lació del SO Windows
 Primer obrim VirtualBox i creem una nova màquina virtual. Seleccionem la ISO d'Ubuntu24 i configurem els paràmetres com la RAM,la xarxa i l'emmagatzematge.
-
-<img width="957" height="696" alt="Captura1" src="https://github.com/user-attachments/assets/6658d8b2-87fc-4070-9b7c-b79c3859e72a" />
-
-
-Obrim la MV i continuem amb la instal·lació del SO Ubuntu de manera gràfica.
-
-A continuació procedim amb l'instal·lació fins arribar al punt on hem de configurar el disc i escollim fer les particions manuals. Seleccionem el nostre disc.
-
-<img width="798" height="655" alt="Captura2" src="https://github.com/user-attachments/assets/3539bd99-9c83-41ff-afe1-450bf666cfec" />
+<img width="1857" height="832" alt="image" src="https://github.com/user-attachments/assets/16100aea-2277-4bcf-9ada-725e5a7189d0" />
 
 
-<img width="796" height="649" alt="Captura3" src="https://github.com/user-attachments/assets/63f66803-b837-4edf-93b4-7c6cc2ec57b1" />
+Obrim la MV i continuem amb la instal·lació del SO Windows de manera gràfica.
+
+Seleccionem l'idioma del nostre SO.
+<img width="1010" height="818" alt="image" src="https://github.com/user-attachments/assets/0fd14ab6-5280-4b64-aa68-665d4bc1ab82" />
+
+Indiquem que volem Instal·lar Windows 11.
+<img width="770" height="616" alt="image" src="https://github.com/user-attachments/assets/51e4eeb1-e682-4b88-b89c-3cfc71c720c9" />
+
+Seleccionem que no tenim la clau del producte i continuem amb el procès. Escollim la versió de Windows desitjada, en aquest cas Windows 11 Pro.
+<img width="749" height="596" alt="image" src="https://github.com/user-attachments/assets/71443093-8e18-47f2-8620-b396d53e5997" />
+
+Acceptem els terminis de llicència i anem a la part del disc, on seleccionarem l'espai del disc on volem instal·lar el sistema.
+<img width="750" height="600" alt="image" src="https://github.com/user-attachments/assets/a7b05361-2db7-4d9a-b652-33405a29f978" />
+
+Un cop fet ja podem procedir amb la instal·lació.
+<img width="756" height="599" alt="image" src="https://github.com/user-attachments/assets/afd4f920-c466-49b9-bb35-a51443d9ed48" />
 
 
-Fem les particions adients, en aquest cas /home, /boot, /boot/efi, / i swap.
 
-<img width="796" height="649" alt="Captura4" src="https://github.com/user-attachments/assets/8fcb63b3-2a9f-4fa3-ac6b-7271563ec9b2" />
-
-Un cop fet, creem el nostre usuari.
-
-<img width="796" height="649" alt="image" src="https://github.com/user-attachments/assets/f821b02d-7c27-4c66-810b-01474cd75422" />
-
-Continuem amb el procès habitual de la instal·lació i esperem a que termini. Reiniciem el sistema i ja tindriem l'instal·lació realitzada.
-
-<img width="796" height="649" alt="image" src="https://github.com/user-attachments/assets/24abf174-2785-45b0-acd4-6434d11f700a" />
-
-<img width="1285" height="856" alt="image" src="https://github.com/user-attachments/assets/b7edc55c-f58a-475f-be62-9966115d2944" />
 
 ## Llicenciament
 
