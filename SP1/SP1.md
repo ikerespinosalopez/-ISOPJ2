@@ -10,18 +10,23 @@ Primer obrim VirtualBox i creem una nova màquina virtual. Seleccionem la ISO d'
 Obrim la MV i continuem amb la instal·lació del SO Windows de manera gràfica.
 
 Seleccionem l'idioma del nostre SO.
+
 <img width="1010" height="818" alt="image" src="https://github.com/user-attachments/assets/0fd14ab6-5280-4b64-aa68-665d4bc1ab82" />
 
 Indiquem que volem Instal·lar Windows 11.
+
 <img width="770" height="616" alt="image" src="https://github.com/user-attachments/assets/51e4eeb1-e682-4b88-b89c-3cfc71c720c9" />
 
 Seleccionem que no tenim la clau del producte i continuem amb el procès. Escollim la versió de Windows desitjada, en aquest cas Windows 11 Pro.
+
 <img width="749" height="596" alt="image" src="https://github.com/user-attachments/assets/71443093-8e18-47f2-8620-b396d53e5997" />
 
 Acceptem els terminis de llicència i anem a la part del disc, on seleccionarem l'espai del disc on volem instal·lar el sistema.
+
 <img width="750" height="600" alt="image" src="https://github.com/user-attachments/assets/a7b05361-2db7-4d9a-b652-33405a29f978" />
 
 Un cop fet ja podem procedir amb la instal·lació.
+
 <img width="756" height="599" alt="image" src="https://github.com/user-attachments/assets/afd4f920-c466-49b9-bb35-a51443d9ed48" />
 
 
