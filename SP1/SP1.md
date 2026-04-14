@@ -3,6 +3,7 @@
 
 ## Virtualització i instal·lació del SO Windows
 Primer obrim VirtualBox i creem una nova màquina virtual. Seleccionem la ISO d'Ubuntu24 i configurem els paràmetres com la RAM,la xarxa i l'emmagatzematge.
+
 <img width="1857" height="832" alt="image" src="https://github.com/user-attachments/assets/16100aea-2277-4bcf-9ada-725e5a7189d0" />
 
 
