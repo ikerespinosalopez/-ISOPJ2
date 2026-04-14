@@ -1,5 +1,5 @@
 
-# ⚡ Sprint 1: Instal·lació i Configuració Inicial
+# ⚡ Sprint 1: Instal·lació i configuració inicial
 
 ## Virtualització i instal·lació del SO Windows
 Primer obrim VirtualBox i creem una nova màquina virtual. Seleccionem la ISO d'Ubuntu24 i configurem els paràmetres com la RAM,la xarxa i l'emmagatzematge.
@@ -29,7 +29,17 @@ Un cop fet ja podem procedir amb la instal·lació.
 
 <img width="756" height="599" alt="image" src="https://github.com/user-attachments/assets/afd4f920-c466-49b9-bb35-a51443d9ed48" />
 
+Escollim usuari i contrasenya.
 
+<img width="968" height="738" alt="image" src="https://github.com/user-attachments/assets/4554eee7-86ed-449d-aa4b-051da6652e09" />
+
+<img width="960" height="733" alt="image" src="https://github.com/user-attachments/assets/9545faa2-d6d0-499e-b2b8-2a9f3d01c0f1" />
+
+Acabem de configurar les preguntes restants i finalment ja tindrem el nostre SO instal·lat a la màquina virtual.
+
+<img width="1045" height="841" alt="image" src="https://github.com/user-attachments/assets/a9eb395a-fe05-43d8-b8d8-929f6bc7abaa" />
+
+me falta instalar las guest additions y clonarlo
 
 
 ## Llicenciament
