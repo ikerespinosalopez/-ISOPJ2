@@ -116,19 +116,9 @@ Seleccionem següent i a continuació Finalitzar per a començar el procès de r
 
 Un cop restaurat tornem a mirar i podem observar que no tenim chrome instal·lat.
 
+<img width="542" height="238" alt="image" src="https://github.com/user-attachments/assets/59370d91-6796-4c34-b09f-caa52302c0d7" />
 
-
-
-
-
-
-
-
-
-
-
-
-
+<img width="771" height="780" alt="image" src="https://github.com/user-attachments/assets/1f6643b4-1b0c-40b0-8f0e-03b6293f0020" />
 
 
 ## 💻 El Llicenciament de Microsoft Windows
@@ -199,8 +189,11 @@ Actualment, Microsoft està migrant cap a un model de **subscripció** dins de l
 > [!IMPORTANT]
 > **Nota sobre Windows Server:** > A diferència de les versions de client, Windows Server es llicencia normalment per **nuclis (cores)** del processador. A més, calen les **CALs** (*Client Access Licenses*) per a cada usuari o dispositiu que accedeixi als serveis del servidor.
 
+---
 
+### Activació del sistema
 
+Per a veure si tenim Windows activat hem d'anar a la configuració 
 
 
 
