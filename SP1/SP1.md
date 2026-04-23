@@ -39,7 +39,64 @@ Acabem de configurar les preguntes restants i finalment ja tindrem el nostre SO 
 
 <img width="1045" height="841" alt="image" src="https://github.com/user-attachments/assets/a9eb395a-fe05-43d8-b8d8-929f6bc7abaa" />
 
-me falta instalar las guest additions y clonarlo
+
+## 🔄 Punts de Restauració
+
+Els punts de restauració són una eina de recuperació del sistema que permet revertir l'estat de l'equip a un moment anterior sense afectar els fitxers personals.
+
+---
+
+### 📌 Conceptes Clau
+* **Què és:** Una "foto" (snapshot) dels fitxers de sistema, el Registre de Windows i els controladors (drivers).
+* **Tecnologia:** Es basa en el servei **Shadow Copy (VSS)** de Windows.
+* **Quan es creen:**
+    * **Automàtics:** Abans d'instal·lar actualitzacions o nous programes.
+    * **Manuals:** Creats per l'administrador abans de fer canvis crítics.
+
+---
+
+### ⚠️ Què es restaura i què no?
+
+| Es recupera ✅ | No es toca ❌ |
+| :--- | :--- |
+| Fitxers de sistema (.exe, .dll) | Documents (.docx, .pdf) |
+| Configuració del Registre | Imatges i Vídeos |
+| Controladors (Drivers) | Missatges de correu |
+| Programes instal·lats recentment | Contrasenyes canviades recentment |
+
+---
+
+### 🛠️ Administració per al Tècnic (ISO)
+1.  **Espai en disc:** Es pot limitar quant espai ocupen (quan s'omple, s'esborren els més antics).
+2.  **Desplegament:** En entorns corporatius, es pot gestionar mitjançant **GPO** (Polítiques de Grup) per assegurar que els usuaris no els desactivin.
+3.  **Utilitat:** És el primer pas de recuperació davant d'una pantalla blava (BSOD) o un error de controlador després d'una actualització.
+
+> [!TIP]
+> Si el sistema no arrenca, els punts de restauració es poden aplicar des de l'**Entorn de Recuperació de Windows (WinRE)**.
+
+
+### Creació d'un punt de restauració
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## 💻 El Llicenciament de Microsoft Windows
@@ -109,11 +166,6 @@ Actualment, Microsoft està migrant cap a un model de **subscripció** dins de l
 
 > [!IMPORTANT]
 > **Nota sobre Windows Server:** > A diferència de les versions de client, Windows Server es llicencia normalment per **nuclis (cores)** del processador. A més, calen les **CALs** (*Client Access Licenses*) per a cada usuari o dispositiu que accedeixi als serveis del servidor.
-
-###
-
-
-
 
 
 
