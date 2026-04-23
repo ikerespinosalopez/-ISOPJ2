@@ -95,11 +95,26 @@ Acceptem i podem veure com el sistema comença a crear-lo i ens avisa quan termi
 
 Ara anem a comprovar que s'hagi creat correctament, per fer-ho instal·larem una aplicació com per exemple Chrome.
 
+<img width="770" height="781" alt="image" src="https://github.com/user-attachments/assets/6c0430b6-7e39-440c-8d21-435d3a4b8afc" />
+
 
 Un cop instal·lat anem a restaurar el sistema. Per fer-ho hem d'accedir de nou al menú de creació de punts de restauració, on trobarem l'opció de restaurar sistema.
 
 <img width="406" height="475" alt="image" src="https://github.com/user-attachments/assets/fd496154-c64b-4427-b372-0b28596415dc" />
 
+Se'ns obrirà una nova finestra per a restaurar, premem següent.
+
+<img width="560" height="450" alt="image" src="https://github.com/user-attachments/assets/0ae56b1c-f99b-4f76-b203-38dd172b3e41" />
+
+Ara ens sortiran tots els punts de restauració disponibles, on podem trobar el que hem creat anteriorment. 
+
+<img width="565" height="455" alt="image" src="https://github.com/user-attachments/assets/0c28833b-a560-4166-a35b-7cc701a74a80" />
+
+Seleccionem següent i a continuació Finalitzar per a començar el procès de restauració.
+
+<img width="635" height="342" alt="image" src="https://github.com/user-attachments/assets/6460c02f-844f-458a-88ef-26288fa3a643" />
+
+Un cop restaurat tornem a mirar i podem observar que no tenim chrome instal·lat.
 
 
 
