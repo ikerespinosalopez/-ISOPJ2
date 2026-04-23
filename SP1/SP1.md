@@ -77,11 +77,28 @@ Els punts de restauració són una eina de recuperació del sistema que permet r
 
 ### Creació d'un punt de restauració
 
+Per a crear un punt de restauració a Windows primer hem de buscar a la barra de cerca "Crear un punt de restauració". Si seleccionem l'opció que ens ha aparegut s'obrirà una finestra amb totes les opcions disponibles.
+
+<img width="1251" height="626" alt="image" src="https://github.com/user-attachments/assets/3d0aef20-4eaf-41b7-a561-0cc356449aa1" />
+
+Per a crear-lo ens demana Configurar la restauració en una unitat del sistema i activar la protecció.
+
+<img width="821" height="493" alt="image" src="https://github.com/user-attachments/assets/ea9acd45-d028-4b4e-8e7c-e5e1fd0e813c" />
+
+Un cop fet això seleccionem Crear per a començar el procès de fer un punt de restauració. Lo primer serà escriure una descripció que ens ajudi a identificar el punt que anem a crear.
+
+<img width="405" height="218" alt="image" src="https://github.com/user-attachments/assets/9fa1e7d5-4b74-445b-9f5a-8e21d9487e89" />
+
+Acceptem i podem veure com el sistema comença a crear-lo i ens avisa quan termini.
+
+<img width="271" height="79" alt="image" src="https://github.com/user-attachments/assets/4afb3e30-0274-4e7a-bbec-ff6566c6d7c8" /> <img width="346" height="122" alt="image" src="https://github.com/user-attachments/assets/40e27645-6be2-4853-bae1-2f32dfcbdde2" />
+
+Ara anem a comprovar que s'hagi creat correctament, per fer-ho instal·larem una aplicació com per exemple Chrome.
 
 
+Un cop instal·lat anem a restaurar el sistema. Per fer-ho hem d'accedir de nou al menú de creació de punts de restauració, on trobarem l'opció de restaurar sistema.
 
-
-
+<img width="406" height="475" alt="image" src="https://github.com/user-attachments/assets/fd496154-c64b-4427-b372-0b28596415dc" />
 
 
 
