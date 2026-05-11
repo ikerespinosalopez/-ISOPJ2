@@ -224,20 +224,22 @@ Executem la comanda slmgr /xpr que serveix per comprovar l'estat d'expiració de
     * **Boot Manager:** `default {current}` (sistema que arrenca per defecte), `timeout 30` (temps d'espera abans d'arrencar).
     * **Boot Loader:** `device partition=C:` (on està instal·lat Windows), `path \Windows\system32\winload.efi` (fitxer que carrega el sistema), `description Windows 11` (sistema operatiu).
 * **Pas 20:** Respondre preguntes curtes.
-    * Quin sistema s'està arrencant: [Escriu la resposta aquí]
-    * A quin disc o partició està instal·lat: [Escriu la resposta aquí]
-    * Quant temps espera abans d'arrencar: [Escriu la resposta aquí]
-    * Quin fitxer inicia Windows: [Escriu la resposta aquí]
+    * Quin sistema s'està arrencant:   S'està arrencant **Windows 11** (es veu al paràmetre `description` del Cargador d'arrencada).
+    * A quin disc o partició està instal·lat:   Està instal·lat a la **partició C:** (es veu al paràmetre `device` del Cargador d'arrencada).
+    * Quant temps espera abans d'arrencar:  Espera **30 segons** (es veu al paràmetre `timeout` de l'Administrador d'arrencada).
+    * Quin fitxer inicia Windows:  L'inicia el fitxer **`\WINDOWS\system32\winload.efi`** (es veu al paràmetre `path` del Cargador d'arrencada).
 * **Pas 21:** Interpretació final. Explicar amb una frase:
-    * Qui decideix l'arrencada (Boot Manager): [Escriu la resposta aquí]
-    * Qui carrega el sistema (Boot Loader): [Escriu la resposta aquí]
+    * Qui decideix l'arrencada (Boot Manager): És el gestor principal que llegeix la configuració inicial i decideix quin sistema operatiu s'ha d'executar, basant-se en l'opció per defecte i el temps d'espera.
+    * Qui carrega el sistema (Boot Loader): És el programa específic (com `winload.efi`) que rep l'ordre del Boot Manager i s'encarrega de carregar físicament el nucli de Windows des del disc dur a la memòria RAM per iniciar-lo.
 
 ---
 
 ## Xarxa bàsica
 
 * **Pas 22 i 23:** Obrir configuració de xarxa i consultar IP amb: `ipconfig`.
-    * *[Insereix la captura de pantalla aquí]*
+
+   <img width="629" height="291" alt="image" src="https://github.com/user-attachments/assets/f80f4123-5e0b-4733-af6b-a10e5fd65621" />
+
 * **Pas 24:** Configurar IP dinàmica (DHCP automàtic).
     * *[Insereix la captura de pantalla aquí]*
 * **Pas 25:** Configurar IP fixa (manual: IP, màscara, gateway, DNS).
