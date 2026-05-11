@@ -391,20 +391,4 @@ També és important no activar auditories innecessàries perquè poden afectar 
 
 ---
 
-# Webgrafia
-
-- Microsoft Learn  
-https://learn.microsoft.com/es-es/windows-server/identity/solution-guides/deploy-security-auditing-with-central-audit-policies--demonstration-steps
-
-- Vídeo YouTube — Cómo configurar auditorías en Windows Server  
-https://www.youtube.com/watch?v=4UgQnVhA9sU
-
-- Vídeo YouTube — Auditorías en Windows Server 2019  
-https://www.youtube.com/watch?v=FqOYtkzNs8U
-
-- Micromouse — Política de auditoría en Windows  
-https://www.micromouse.com/2023/07/21/politica-auditoria-windows/
-
-- Blog UGR — Activar la auditoría de inicio de sesión en Windows  
-https://blogs.ugr.es/seguridadinformatica/activar-la-auditoria-de-inicio-de-sesion-en-windows/
 
