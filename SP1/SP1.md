@@ -238,11 +238,16 @@ Executem la comanda slmgr /xpr que serveix per comprovar l'estat d'expiració de
    <img width="629" height="291" alt="image" src="https://github.com/user-attachments/assets/f80f4123-5e0b-4733-af6b-a10e5fd65621" />
 
 * **Pas 24:** Configurar IP dinàmica (DHCP automàtic).
-    * *[Insereix la captura de pantalla aquí]*
+  
+    <img width="952" height="825" alt="image" src="https://github.com/user-attachments/assets/eb8f3933-2476-443b-9b07-0085e9dda6ec" />
+
 * **Pas 25:** Configurar IP fixa (manual: IP, màscara, gateway, DNS).
-    * *[Insereix la captura de pantalla aquí]*
+
+    <img width="498" height="602" alt="image" src="https://github.com/user-attachments/assets/f9006c9d-21d3-47d4-aee6-7220f58071e9" />
+
 * **Pas 26:** Comprovar connexió amb: `ping google.com`.
-    * *[Insereix la captura de pantalla aquí]*
+
+    <img width="689" height="311" alt="image" src="https://github.com/user-attachments/assets/60dbcba7-0dcd-42c4-9fb8-34445c797f80" />
 
 ---
 
