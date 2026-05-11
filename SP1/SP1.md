@@ -193,7 +193,92 @@ Actualment, Microsoft està migrant cap a un model de **subscripció** dins de l
 
 ### Activació del sistema
 
-Per a veure si tenim Windows activat hem d'anar a la configuració 
+Per a veure si tenim Windows activat hem d'anar a Configuració > Sistema > Activació i comprovem que no tenim Windows activat.
+
+<img width="949" height="589" alt="image" src="https://github.com/user-attachments/assets/f1789226-ddc6-43cd-9f35-f9438906482a" />
+
+Executem la comanda slmgr /xpr que serveix per comprovar l'estat d'expiració de la llicència actual del sistema.
+
+<img width="731" height="363" alt="image" src="https://github.com/user-attachments/assets/43446907-b6dc-4f9d-a926-786f4827c906" />
+
+
+### Edicions i preus
+
+| Tipus de Llicència | Descripció |
+| :--- | :--- |
+| **Retail (FPP)** | Llicència comercial comprada per separat. Pertany a l'usuari i no a la màquina. |
+| **OEM** | Preinstal·lada en equips nous. Queda vinculada permanentment a la placa base d'aquell PC. |
+| **Volum** | Orientada a empreses i institucions. Permet activar múltiples ordinadors simultàniament. |
+| **Digital** | Llicència vinculada al maquinari i al compte de Microsoft, substituint la clau tradicional. |
+| **Subscripció** | Pagament mensual o anual per usuari (ex. *Windows 365*), utilitzada principalment al núvol. |
+
+---
+
+## Gestor d'arrencada
+
+* **Pas 16 i 17:** Obrir Command Prompt com administrador i executar `bcdedit`.
+  
+    <img width="693" height="614" alt="image" src="https://github.com/user-attachments/assets/89e189c0-73a6-4ca4-aa06-bda14da78520" />
+
+* **Pas 18 i 19:** Identificar els blocs i interpretar dades concretes (Boot Manager i Boot Loader).
+    * **Boot Manager:** `default {current}` (sistema que arrenca per defecte), `timeout 30` (temps d'espera abans d'arrencar).
+    * **Boot Loader:** `device partition=C:` (on està instal·lat Windows), `path \Windows\system32\winload.efi` (fitxer que carrega el sistema), `description Windows 11` (sistema operatiu).
+* **Pas 20:** Respondre preguntes curtes.
+    * Quin sistema s'està arrencant: [Escriu la resposta aquí]
+    * A quin disc o partició està instal·lat: [Escriu la resposta aquí]
+    * Quant temps espera abans d'arrencar: [Escriu la resposta aquí]
+    * Quin fitxer inicia Windows: [Escriu la resposta aquí]
+* **Pas 21:** Interpretació final. Explicar amb una frase:
+    * Qui decideix l'arrencada (Boot Manager): [Escriu la resposta aquí]
+    * Qui carrega el sistema (Boot Loader): [Escriu la resposta aquí]
+
+---
+
+## Xarxa bàsica
+
+* **Pas 22 i 23:** Obrir configuració de xarxa i consultar IP amb: `ipconfig`.
+    * *[Insereix la captura de pantalla aquí]*
+* **Pas 24:** Configurar IP dinàmica (DHCP automàtic).
+    * *[Insereix la captura de pantalla aquí]*
+* **Pas 25:** Configurar IP fixa (manual: IP, màscara, gateway, DNS).
+    * *[Insereix la captura de pantalla aquí]*
+* **Pas 26:** Comprovar connexió amb: `ping google.com`.
+    * *[Insereix la captura de pantalla aquí]*
+
+---
+
+## Comandes generals
+
+* **Pas 27:** Obrir PowerShell.
+    * *[Insereix la captura de pantalla aquí]*
+* **Pas 28:** Diferenciar cmd i PowerShell.
+    * **cmd:** Comandes bàsiques i clàssiques.
+    * **PowerShell:** Més potent, permet treballar amb objectes i automatitzar tasques.
+* **Pas 29:** Provar comandes bàsiques (`dir`, `cd`, `mkdir prova`, `echo hola > fitxer.txt`, `del fitxer.txt`).
+    * *[Insereix la captura de pantalla aquí demostrant-ne l'ús]*
+* **Pas 30:** Comandes útils del sistema (`tasklist`, `taskkill /IM notepad.exe /F`, `systeminfo`, `hostname`, `whoami`).
+    * *[Insereix la captura de pantalla aquí demostrant-ne l'ús]*
+* **Pas 31:** Comandes de xarxa (`ipconfig`, `ping google.com`, `netstat -an`).
+    * *[Insereix la captura de pantalla aquí demostrant-ne l'ús]*
+* **Pas 32:** Comandes interessants (`tree`, `cls`, `help`, `shutdown /s /t 0`).
+    * *[Insereix la captura de pantalla aquí demostrant-ne l'ús]*
+* **Pas 33:** Mini interpretació.
+    * Indicar què mostra `tasklist`: [Escriu la resposta aquí]
+    * Indicar què mostra `ipconfig`: [Escriu la resposta aquí]
+    * Indicar què mostra `systeminfo`: [Escriu la resposta aquí]
+
+---
+
+## Instal·lació d'aplicacions
+
+* **Pas 34, 35 i 36:** Descarregar un programa des del navegador (ex: Chrome o VS Code), instal·lar-lo seguint l'assistent, obrir-lo i comprovar que funciona.
+    * *[Insereix la captura de pantalla aquí]*
+* **Pas 37 i 38:** Instal·lar una aplicació des de Microsoft Store, obrir-la i comprovar funcionament.
+    * *[Insereix la captura de pantalla aquí]*
+* **Pas 39:** Desinstal·lar una aplicació: Configuració → Aplicacions → Desinstal·lar.
+    * *[Insereix la captura de pantalla aquí]*
+* **Pas 40:** Verificació: Comprovar que el programa ja no apareix al sistema.
+    * *[Insereix la captura de pantalla aquí]*
 
 
 
