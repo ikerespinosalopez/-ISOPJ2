@@ -150,7 +150,7 @@ Propiedades → Seguridad → Opciones avanzadas → Auditoría
 Afegim l’usuari:
 
 ```text
-Maria
+Administrador
 ```
 
 Permisos:
@@ -161,9 +161,7 @@ Lectura
 
 ## Captura 3
 
-```text
-[POSAR AQUÍ CAPTURA DE LA CONFIGURACIÓ D’AUDITORIA DE LA CARPETA]
-```
+<img width="763" height="511" alt="image" src="https://github.com/user-attachments/assets/0d22a3d1-cad4-4ee8-84c9-8a4acd187418" />
 
 ---
 
@@ -185,9 +183,7 @@ Això permetrà provar diferents accions dins la carpeta.
 
 ## Captura 4
 
-```text
-[POSAR AQUÍ CAPTURA DELS PERMISOS DE L’ADMINISTRADOR]
-```
+<img width="763" height="511" alt="image" src="https://github.com/user-attachments/assets/5f06e8d8-f0df-43c0-b61c-af911102f41c" />
 
 ---
 
@@ -216,9 +212,7 @@ Aquest event indica accés a objectes.
 
 ## Captura 5
 
-```text
-[POSAR AQUÍ CAPTURA DEL EVENT ID 4663]
-```
+<img width="961" height="899" alt="image" src="https://github.com/user-attachments/assets/a8fc35e1-cf4d-4283-8744-a5dd5e0f238d" />
 
 ---
 
@@ -243,9 +237,7 @@ Opcions:
 
 ## Captura 6
 
-```text
-[POSAR AQUÍ CAPTURA DE L’AUDITORIA DE PROCESSOS]
-```
+<img width="789" height="414" alt="image" src="https://github.com/user-attachments/assets/a144f2e2-d9ba-44b3-825f-e24ec867e99f" />
 
 ---
 
@@ -269,9 +261,7 @@ Aquest event indica que s’ha iniciat un procés.
 
 ## Captura 7
 
-```text
-[POSAR AQUÍ CAPTURA DEL EVENT ID 4688]
-```
+<img width="956" height="894" alt="image" src="https://github.com/user-attachments/assets/6f6c7939-b4b1-464e-a1e8-95738c6d6141" />
 
 ---
 
@@ -293,9 +283,7 @@ Aquest event indica finalització d’un procés.
 
 ## Captura 8
 
-```text
-[POSAR AQUÍ CAPTURA DEL EVENT ID 4689]
-```
+<img width="957" height="891" alt="image" src="https://github.com/user-attachments/assets/bb1b062a-7b74-47b6-919b-8b7caa397b4a" />
 
 ---
 
@@ -320,9 +308,7 @@ Opcions:
 
 ## Captura 9
 
-```text
-[POSAR AQUÍ CAPTURA DE L’AUDITORIA D’ADMINISTRACIÓ DE COMPTES]
-```
+<img width="790" height="445" alt="image" src="https://github.com/user-attachments/assets/6bda16e2-3a4a-4429-95a4-0116105d3615" />
 
 ---
 
@@ -351,15 +337,11 @@ Events esperats:
 
 ## Captura 10
 
-```text
-[POSAR AQUÍ CAPTURA DEL EVENT ID 4720]
-```
+<img width="955" height="904" alt="image" src="https://github.com/user-attachments/assets/6ea76802-0138-4367-a0d6-2e193ef38f94" />
 
 ## Captura 11
 
-```text
-[POSAR AQUÍ CAPTURA DEL EVENT ID 4722]
-```
+<img width="960" height="912" alt="image" src="https://github.com/user-attachments/assets/0fd74973-c651-4efd-a1e8-c4e6a1f9a034" />
 
 ---
 
@@ -377,9 +359,7 @@ Aquest event indica que el compte ha estat desactivat.
 
 ## Captura 12
 
-```text
-[POSAR AQUÍ CAPTURA DEL EVENT ID 4725]
-```
+<img width="957" height="880" alt="image" src="https://github.com/user-attachments/assets/074783b9-56b7-45f1-ae3a-d51d01974dd2" />
 
 ---
 
@@ -397,9 +377,7 @@ Aquest event indica que el compte ha estat eliminat.
 
 ## Captura 13
 
-```text
-[POSAR AQUÍ CAPTURA DEL EVENT ID 4726]
-```
+<img width="957" height="883" alt="image" src="https://github.com/user-attachments/assets/26b194e0-04f4-4f03-9501-a48d499d59b0" />
 
 ---
 
