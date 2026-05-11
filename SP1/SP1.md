@@ -204,13 +204,10 @@ Executem la comanda slmgr /xpr que serveix per comprovar l'estat d'expiració de
 
 ### Edicions i preus
 
-| Tipus de Llicència | Descripció |
-| :--- | :--- |
-| **Retail (FPP)** | Llicència comercial comprada per separat. Pertany a l'usuari i no a la màquina. |
-| **OEM** | Preinstal·lada en equips nous. Queda vinculada permanentment a la placa base d'aquell PC. |
-| **Volum** | Orientada a empreses i institucions. Permet activar múltiples ordinadors simultàniament. |
-| **Digital** | Llicència vinculada al maquinari i al compte de Microsoft, substituint la clau tradicional. |
-| **Subscripció** | Pagament mensual o anual per usuari (ex. *Windows 365*), utilitzada principalment al núvol. |
+| Edició de Windows | Microsoft Store (Oficial / Retail) | Botigues de tercers (Claus OEM / Mercat gris)* |
+| :--- | :--- | :--- |
+| **Windows 11 Home** | ~ 145 € | 10 € - 20 € |
+| **Windows 11 Pro** | ~ 259 € | 15 € - 30 € |
 
 ---
 
