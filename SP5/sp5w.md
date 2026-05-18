@@ -392,7 +392,7 @@ També és important no activar auditories innecessàries perquè poden afectar 
 ---
 
 
-# Supervisió i Diagnòstic del Rendiment a Windows Server 2022
+# Supervisió i Diagnòstic del Rendiment a Windows Server
 
 ## 1. Fonaments de la Monitorització del Sistema
 
@@ -413,42 +413,46 @@ Per dur a terme aquesta tasca, Windows Server 2022 compta amb dues utilitats fon
 
 ### Pas 1: Diagnòstic inicial des de l'Administrador de tasques
 En obrir la utilitat amb la combinació `Ctrl + Shift + Esc`, la pestanya de **Processos** ens mostra l'activitat general dividida per tipologies d'execució:
-* **Aplicacions (2):** Programes en primer pla com l'`Administrador de tareas` (17,4 MB) i el `Server Manager` (62,6 MB).
-* **Processos en segon pla (36):** Tasques del nucli de l'entorn com `AggregatorHost.exe`, `AntiMalware Definition Update` o l'`Experiencia de entrada de Windows`.
+* **Aplicacions (3):** Programes en primer pla com l'`Administrador de tareas` (40 MB) i el `Server Manager` (57,6 MB).
+* **Processos en segon pla (30):** Tasques del nucli de l'entorn com `AggregatorHost.exe`, `AntiMalware Definition Update` o l'`Experiencia de entrada de Windows`.
 
-> **Nota de rendiment:** Durant l'anàlisi, es registra una càrrega del **65% en CPU** i un **42% en Memòria**, cosa que equival a un nivell de treball mitjà-alt per al servidor. L'Administrador del Servidor (`Server Manager`) es posiciona com l'aplicació oberta amb un major requeriment de memòria (62,6 MB).
+<img width="764" height="580" alt="image" src="https://github.com/user-attachments/assets/aedcdc5e-b217-44b3-8886-a884e3f7d416" />
+
 
 ### Pas 2: Diagnòstic del Processador (CPU)
 A la secció **Rendimiento → CPU**, observem les mètriques d'activitat dels últims 60 segons:
 * **Maquinari utilitzat:** Intel(R) Core(TM) i7-10700 @ 2,90 GHz
-* **Taxa d'ús instantani:** 9%
-* **Freqüència de rellotge:** 2,90 GHz
-* **Mètriques d'execució:** 119 processos, 1.398 subprocessos (fils d'execució) i 51.610 identificadors.
+* **Taxa d'ús instantani:** 17%
+* **Freqüència de rellotge:** 2,11 GHz
+* **Mètriques d'execució:** 119 processos, 1.200 subprocessos (fils d'execució) i 43.000 identificadors.
 * **Temps de funcionament acumulat:** 0:00:03:23
 * **Arquitectura lògica:** 2 processadors virtuals (detectat com a entorn virtualitzat).
 
-*Interpretació:* Tot i que la gràfica mostra puntes de treball considerables en moments anteriors, l'estat actual és relaxat (9%). Un consum sostingut proper al 100% indicaria la necessitat d'ampliar potència o corregir un procés bloquejat.
+<img width="757" height="572" alt="image" src="https://github.com/user-attachments/assets/f0876cc5-01fc-4bce-80a8-a415e8c676b9" />
+
 
 ### Pas 3: Diagnòstic de la Memòria RAM
 Mitjançant l'apartat **Rendimiento → Memoria**, s'avalua la capacitat d'emmagatzematge temporal:
-* **Memòria física detectada:** 4,0 GB
-* **En ús (dades comprimides):** 1,6 GB (equivalent al 40%)
-* **Espai lliure immediat:** 2,4 GB
+* **Memòria física detectada:** 10,8 GB
+* **En ús (dades comprimides):** 2,1 GB
+* **Espai lliure immediat:** 6,5 GB
 * **Memòria confirmada (total/límit):** 1,6 / 5,4 GB
-* **Dades en memòria cau:** 1,9 GB
-* **Bloc paginat / no paginat:** 120 MB / 97,4 MB
+* **Dades en memòria cau:** 4,3 GB
+* **Bloc paginat / no paginat:** 237 MB / 125,4 MB
 
-*Interpretació:* El consum del 40% es considera estable i correcte. Destaca la gestió de la memòria cau (1,9 GB) per agilitzar consultes freqüents. Si la memòria lliure s'esgotés, el sistema utilitzaria el disc com a memòria virtual (fitxer de paginació), alentint greument la velocitat de resposta general.
+<img width="710" height="573" alt="image" src="https://github.com/user-attachments/assets/54d5bc2f-7b29-4c04-bf1a-34a731499124" />
+
 
 ### Pas 4: Diagnòstic de la Interfície de Xarxa
 Navegant cap a **Rendimiento → Ethernet**, es visualitza el flux de dades de la targeta de xarxa:
 * **Controlador actiu:** Intel(R) PRO/1000 MT Desktop Adapter
-* **Trànsit de pujada (Enviament):** 80,0 Kbps
-* **Trànsit de baixada (Recepció):** 9,2 Mbps
+* **Trànsit de pujada (Enviament):** 0,0 Kbps
+* **Trànsit de baixada (Recepció):** 0,0 Mbps
 * **Ample de banda de la línia:** 11 Mbps
-* **Configuració de xarxa:** IPv4 (`10.0.2.17`) i IPv6 (`fe80::81c9:f99a:5180:5eea%9`)
+* **Configuració de xarxa:** IPv4 (`10.0.2.15`) i IPv6 (`fd17:625c:f037:2:3d:f43c:caf8:bb83`)
 
-*Interpretació:* S'observa una asimetria lògica on la recepció de dades és molt més forta (9,2 Mbps) que la tramesa. Aquesta situació és habitual quan el servidor descarrega paquets o actualitzacions. Un pic elevat en la gràfica ajuda a identificar possibles abusos en la línia de comunicació.
+<img width="713" height="576" alt="image" src="https://github.com/user-attachments/assets/17cb9bef-189e-420d-98ad-8b70cf011a71" />
+
 
 ### Pas 5: Accés Avançat amb el Monitor de Recursos
 Per a un nivell de detall superior, s'executa l'eina avançada prement `Windows + R` i teclejant `resmon`. Aquest panell ofereix un desglossament exhaustiu creuant dades de PID, serveis subjacents i interaccions amb el programari.
@@ -464,7 +468,8 @@ Dins la pestanya de **CPU**, l'anàlisi es segmenta en dues capes (Ús total del
    * `wuauserv` (Windows Update) — Vinculat al PID 2664, genera el major impacte amb un **9,63% de CPU**.
    * `mpssvc` (Cortafocs de Windows) — Vinculat al PID 1264, amb un consum de l'1,06%.
 
-*Deducció clau:* Aquesta eina ens permet descobrir què hi ha darrere d'un procés genèric com `svchost.exe`. Aquí comprovem directament que la càrrega de la CPU està provocada pel servei d'actualitzacions automàtiques de Windows.
+<img width="782" height="587" alt="image" src="https://github.com/user-attachments/assets/791e1f9c-f9e6-4803-8072-e991a9aed4f8" />
+
 
 ### Pas 7: Anàlisi de Memòria Avançada (Monitor de Recursos)
 A la pestanya de **Memoria**, s'avalua el comportament de la RAM mitjançant el concepte de memòria privada:
@@ -474,41 +479,35 @@ A la pestanya de **Memoria**, s'avalua el comportament de la RAM mitjançant el 
    * `lsass.exe` (Seguretat local/Autenticació): 56.672 KB reservats (32.840 KB privats).
    * `dwm.exe` (Interfície gràfica de finestres): 35.420 KB reservats (31.460 KB privats).
 * **Balanç del Maquinari:**
-   * Total del sistema: 4.076 MB
-   * Consum real: 1.526 MB
+   * Total del sistema: 8997 MB
+   * Consum real: 3289 MB
    * Marge lliure disponible: 2.483 MB
-   * Emmagatzematge en memòria cau: 2.135 MB
-   * Memòria en espera: 2.068 MB | Memòria lliure real: 415 MB
+   * Emmagatzematge en memòria cau: 5926 MB
+   * Memòria en espera: 5700 MB | Memòria lliure real: 410 MB
 
-*Interpretació:* Que Windows Defender (`MsMpEng.exe`) lideri el consum amb 161 MB entra dins dels paràmetres normals d'un entorn protegit. El servidor disposa de prou marge operatiu per a noves tasques.
+<img width="776" height="584" alt="image" src="https://github.com/user-attachments/assets/959434b7-a6a8-4220-83b8-25aa8cc493af" />
+
 
 ### Pas 8: Anàlisi de Disc Avançada (Monitor de Recursos)
 Dins l'apartat de **Disco**, es monitoritzen els fluxes de lectura i escriptura:
 * **Processos actius a l'emmagatzematge:**
-   * `System` (PID 4): Lectura a 41.062 B/s i Escriptura a 898.662 B/s (Total: 939.725 B/s).
-   * `perfmon.exe` (PID 5816): Lectura de 185.958 B/s fruit de la pròpia monitorització.
-   * `svchost.exe (LocalSystemNet...)` (PID 3880): Lectura de 106.496 B/s.
+   * `System` (PID 4): Lectura a 4.287 B/s i Escriptura a 5.762 B/s .
+   * `svchost.exe (LocalSystemNet...)` (PID 3672): Lectura de 106.496 B/s.
    * `fontdrvhost.exe`: Lectura de 100.864 B/s.
-* **Activitat general del disc:** Transferència global de 139.264 B/s amb un temps d'activitat de la unitat del 5%.
+* **Activitat general del disc:** Transferència global de 126.149 B/s amb un temps d'activitat de la unitat del 5%.
 * **Estat de les unitats:**
    * Disc local `C:` — Temps de resposta: 4,72 ms | Capacitat en ús: 68,1 GB | Volum total: 81,2 GB.
 
-*Interpretació:* El procés pare `System` lidera les operacions d'escriptura (898 KB/s) a causa de la gestió interna de fitxers de l'entorn. El temps de resposta (4,72 ms) és òptim i indica un bon rendiment de l'emmagatzematge virtual.
+<img width="783" height="517" alt="image" src="https://github.com/user-attachments/assets/cd3e911f-8d25-460c-9386-ec7794da1ef8" />
+
 
 ### Pas 9 i 10: Anàlisi de Xarxa i Ports Oberts (Monitor de Recursos)
 La secció de **Red** mostra les interaccions externes de les aplicacions i els serveis que esperen connexions:
 * **Processos amb trànsit de xarxa:**
-   * `svchost.exe (NetworkService...)` (PID 5760): Recepció dominant de **1.103.428 B/s** (Líder en consum).
-   * `lsass.exe` (PID 676): Enviament de 749 B/s i Recepció de 2.449 B/s (Validacions del Directori Actiu).
-   * `Microsoft.ActiveDirectory.W...` (PID 2980): Intercanvi de dades constant.
-   * `dns.exe` (PID 3044): Trànsit residual (7 B/s sortida, 9 B/s entrada).
-* **Mètriques globals:** Entrada/Sortida de 8 Mbps amb un percentatge d'ús del 0%.
-* **Connexions TCP en funcionament:** El procés `svchost.exe` (PID 5760) manté diversos enllaços actius cap a adreces IP externes `193.5.x.x` mitjançant el port 80.
-* **Serveis a l'escolta (Ports d'entrada de seguretat):**
-   * `dns.exe` (PID 3044) — Escolta activa al **Port 53 (TCP/UDP)** en protocols IPv4 i IPv6 (Resolució de noms DNS).
-   * `lsass.exe` (PID 676) — Escolta activa al **Port 88 (TCP)** (Protocol Kerberos d'autenticació).
+   * `svchost.exe (NetworkService...)` (PID 1904): Recepció dominant de **261 B/s**.
 
-*Interpretació:* El trànsit rebut per `svchost.exe` d'1,1 MB/s dirigit al port 80 d'Internet confirma novament que el servidor està descarregant actualitzacions oficials de Microsoft. Els ports oberts (53 i 88) són els canònics i obligatoris per a un Controlador de Domini (Active Directory), descartant així qualsevol intrusió.
+<img width="785" height="556" alt="image" src="https://github.com/user-attachments/assets/75b190e2-c681-4a23-be03-585ed8960da1" />
+
 
 ---
 
